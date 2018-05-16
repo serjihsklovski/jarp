@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.serjihsklovski.jarp'
+version = '0.1.0'
+
+description = '''
+A lil utility to view and debug jar arguments.
+'''
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'com.serjihsklovski.jarp.Application'
+
+jar {
+    manifest.attributes(
+            'Main-Class': mainClassName
+    )
+}
